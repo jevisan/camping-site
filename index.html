@@ -13,13 +13,14 @@
 <body>
   
   <header>
-    <div class="container">
+
+    <div class="hero-image">  
       
-      <div class="hero-image">
+      <div class="container">
         <div class="header-left">
-          <a href="#" class="orange-circle">
+          <div class="orange-circle logo">
             <img src="img/icons/t-icon.svg" alt="Find yourself outside">
-          </a>
+          </div>
         </div>
         <div class="header-right"></div>
         <div class="hero-text">
@@ -34,35 +35,40 @@
   
   <div class="container">
     <main role="main">
-      <div class="card-container">
-        <div class="card featured-card">
-          <img src="img/icons/bonfire.svg" alt="Camping & Day Use" class="card-icon">
-          <h3 class="card-title">Camping & Day Use</h3>
-          <p class="card-description">Return to your favorite spot or discover a new one that’s right for you.</p>
+      
+      <section class="features-section">
+        
+        <div class="card-container feature-cards-container">
+          <div class="card featured-card">
+            <img src="img/icons/bonfire.svg" alt="Camping & Day Use" class="card-icon">
+            <h3 class="card-title">Camping & Day Use</h3>
+            <p class="card-description">Return to your favorite spot or discover a new one that’s right for you.</p>
+          </div>
+          <div class="card featured-card">
+            <img src="img/icons/tickets.svg" alt="Tours & Tickets" class="card-icon">
+            <h3 class="card-title">Tours & Tickets</h3>
+            <p class="card-description">Reserve tours and tickets to participate in events.</p>
+          </div>
+          <div class="card featured-card">
+            <img src="img/icons/filled-outline.svg" alt="Permits" class="card-icon">
+            <h3 class="card-title">Permits</h3>
+            <p class="card-description">Obtain permits for access to high-demand locations.</p>
+          </div>
+          <div class="card featured-card">
+            <img src="img/icons/fishing.svg" alt="Recreation Activities" class="card-icon">
+            <h3 class="card-title">Recreation Activities</h3>
+            <p class="card-description">Find the best spots for hunting, fishing & recreational shooting.</p>
+          </div>
         </div>
-        <div class="card featured-card">
-          <img src="img/icons/tickets.svg" alt="Tours & Tickets" class="card-icon">
-          <h3 class="card-title">Tours & Tickets</h3>
-          <p class="card-description">Reserve tours and tickets to participate in events.</p>
-        </div>
-        <div class="card featured-card">
-          <img src="img/icons/filled-outline.svg" alt="Permits" class="card-icon">
-          <h3 class="card-title">Permits</h3>
-          <p class="card-description">Obtain permits for access to high-demand locations.</p>
-        </div>
-        <div class="card featured-card">
-          <img src="img/icons/fishing.svg" alt="Recreation Activities" class="card-icon">
-          <h3 class="card-title">Recreation Activities</h3>
-          <p class="card-description">Find the best spots for hunting, fishing & recreational shooting.</p>
-        </div>
-      </div>
+
+      </section>
 
       <section class="destinations-section">
         
         <div class="section-header">
           <div class="destinations-title-header__icon">
             <div class="orange-circle"></div>
-            <img src="img/icons/destination.svg" alt="Explore Destinations & Activities">
+            <img src="img/icons/destination.svg" alt="Explore Destinations & Activities" class="icon">
           </div>
           <h2>Explore Destinations & Activities</h2>
         </div>
@@ -70,13 +76,13 @@
         <div class="card-container">
   
           <div class="card destination-card">
+            <img src="img/trickle-creek/trickle-creek-unsplash@2x.png" alt="Trickle Creek Ranch" class="destination-card__image">
             <div class="favorite-container">
               <img src="img/icons/heart-outline.svg" class="favorite-heart">
             </div>
             <div class="destination-card__pricing">
               <p>$36/night</p>
             </div>
-            <img src="img/trickle-creek/trickle-creek-unsplash@2x.png" alt="Trickle Creek Ranch" class="destination-card__image">
             <h3 class="card-title">Trickle Creek Ranch</h3>
             <p class="card-description">Book unique camping experiences on over 300,000 campsites.</p>
             <button class="btn btn-secondary">Read More</button>
@@ -96,13 +102,13 @@
           <div class="contact-card__info">
             <h2>Let's Stay in Touch</h2>
             <p>Get travel planning ideas, helpful tips, and stories from our visitors delivered right to your inbox.</p>
-            <div class="contact-card__input">
-              <input type="text">
-              <img src="img/icons/envelope-outline.svg">
-              <button>
-                <img src="img/icons/paper-airplane.svg">
-              </button>
-            </div>
+          </div>
+          <div class="contact-card__input">
+            <input type="text" placeholder="Email Address">
+            <img src="img/icons/envelope-outline.svg">
+            <button>
+              <img src="img/icons/paper-airplane.svg">
+            </button>
           </div>
         </div>
 
@@ -111,9 +117,9 @@
   </div>
   
   <footer>
-    <a href="#" class="navigate-to-top">
+    <button class="navigate-to-top">
       <img src="img/icons/arrow-up.svg">
-    </a>
+    </button>
     <div class="container">
       <div class="footer-description">
         <h4>Hipcamp is everywhere you want to camp.</h4>
@@ -156,7 +162,9 @@
         <a href="#"><img src="img/icons/download-on-the-app-store-apple-2.svg"></a>
         <a href="#"><img src="img/icons/google-play-badge.svg"></a>
       </div>
-      <p>© 2020. All rights reserved.</p>
+      <div class="footer-tm">
+        <p>© 2020. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 </body>

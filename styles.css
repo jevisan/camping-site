@@ -20,6 +20,13 @@ body {
   background-color: var(--background);
 }
 
+footer {
+  background-color: var(--secondary-color);
+  border-radius: 120px 120px 0 0;
+  margin-top: 5em;
+  padding-bottom: 1em;
+}
+
 /*=====================*/
 /* Typography */
 /*=====================*/
@@ -30,6 +37,32 @@ h1, h2, h3, h4 {
 
 h1, h2, h3, h4, p {
   color: var(--grey-1);
+}
+
+.hero-text > h1,
+.hero-text > p {
+  color: var(--white);
+}
+
+.hero-text > h1 {
+  font-size: 2.8rem;
+}
+
+.hero-text > p,
+.hero-text > button {
+  font-size: 1.125rem;
+}
+
+.card-title {
+  font-size: 1.125rem;
+}
+
+.destination-card__pricing > p {
+  color: var(--primary-color);
+}
+
+.contact-card__info > h2 {
+  font-size: 2.5rem;
 }
 
 /*=====================*/
@@ -50,6 +83,38 @@ header, section {
   background-color: var(--white);
   border-radius: 20px;
   text-align: center;
+  margin-top: 1em;
+}
+
+.orange-circle {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+.icon {
+  position: relative;
+  z-index: 200;
+}
+
+.logo {
+  width: 3.125em;
+  height: 3.125em;
+  display: flex;
+  justify-content: center;
+  transform: translateY(2em);
+}
+
+.logo > img {
+  width: 1.15em;
+}
+
+.destinations-title-header__icon > .orange-circle {
+  width: 4.3em;
+  height: 4.3em;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, .5em);
+  z-index: 1;
 }
 
 /* buttons */
@@ -70,6 +135,7 @@ header, section {
 
 .btn-secondary {
   background-color: var(--grey-3);
+  color: var(--grey-2);
 }
 
 .btn-outline {
@@ -78,7 +144,26 @@ header, section {
   color: var(--primary-color);
 }
 
+/* sections */
+
+.section-header {
+  text-align: center;
+}
+
+.features-section {
+  position: relative;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
 /* featured-cards */
+
+.feature-cards-container {
+  transform: translateY(-8.5em);
+}
 
 .featured-card {
   padding: 2.2em 2em;
@@ -88,15 +173,159 @@ header, section {
 /* Destination cards */
 
 .destination-card {
-  padding: 2em;
+  padding: 2.5em;
+  position: relative;
+}
+
+.destination-card > h3 {
+  margin-top: -1em;
 }
 
 .destination-card__image {
   width: 100%;
 }
 
-/* sections */
+.destination-card__pricing {
+  background-color: var(--white);
+  border-radius: 14px;
+  position: relative;
+  width: 50%;
+  height: 4em;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-2em);
+}
 
-.section-header {
+.favorite-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(-3em, 3em);
+  background-color: var(--white);
+  border-radius: 14px;
+  width: 2.5em;
+  height: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorite-container > img {
+  height: 24px;
+  width: 24px;
+}
+
+
+
+/* hero */
+
+.hero-image {
+  /* darken background image to make text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/camping.png");
+  height: 90vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  border-radius: 0 0 120px 120px;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* contact card */
+
+.contact-card {
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  padding: 2em 1.5em;
+}
+
+
+.contact-card__image {
+
+}
+
+.contact-card__image > img {
+  width: 100%;
+}
+
+.contact-card__info {
+  padding: 2em;
+}
+
+.contact-card__input {
+  background-color: var(--white);
+  border-radius: 20px;
+  height: 5em;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-card__input > img {
+  order: 1;
+  width: 2em;
+}
+
+.contact-card__input > input {
+  order: 2;
+  border: 0;
+  color: var(--grey-2);
+  max-width: 10em;
+}
+
+.contact-card__input > button {
+  order: 3;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  border: 0;
+}
+
+/* Footer */
+
+.navigate-to-top {
+  width: 4.3em;
+  height: 4.3em;
+  background-color: var(--white);
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 5px 10px 30px 0 rgba(59, 55, 53, 0.05);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-description {
+  margin-top: 3em;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.column {
+  width: 50%;
+}
+
+.column > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-tm {
   text-align: center;
 }
